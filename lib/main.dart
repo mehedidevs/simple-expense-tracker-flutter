@@ -89,7 +89,7 @@ class _ExpenseTrackerAppState extends State<ExpenseTrackerApp> {
                 style: TextStyle(fontSize: 18.0),
               ),
               SizedBox(height: 16.0),
-              Expanded(
+             ...[Expanded(
                 child: ListView.builder(
                   itemCount: expenses.length,
                   itemBuilder: (context, index) {
@@ -100,7 +100,7 @@ class _ExpenseTrackerAppState extends State<ExpenseTrackerApp> {
                     );
                   },
                 ),
-              ),
+              ),]
             ],
           ),
         ),
